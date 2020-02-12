@@ -2,9 +2,18 @@
   <div>
     <span>
       {{current.city}} {{current.country}}
+      <!-- data binding is done here {{}} -->
     </span>
+  <br />
+    <span>{{current.date | date:'fullDate'}}</span>
   </div>
   <div>
-    {{current.temperature}}
+    <img [src] = 'current.image' />
+    <!-- binding the src property to the value of current data (property binding)-->
+    <span>{{current.temperature | number:'1.0-0'}} &#8457;</span> 
+    <!-- to display degree symbol &#8457 -->
+  </div>
+  <div>
+    {{current.description}}
   </div>
 </div>
