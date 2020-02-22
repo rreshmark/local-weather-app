@@ -1,11 +1,14 @@
 <div style="text-align: center;">
-  <h1>
+  <mat-toolbar color="primary">
     Local Weather
-  </h1>
-  <div>
-    weather forecast right now!
+  </mat-toolbar>
+  <div >
+    <b>weather forecast right now!</b>
   </div>
-  <h2>
+  <mat-card>
+    <app-city-search></app-city-search>
+  </mat-card>
+  <mat-card color="primary">
     <app-current-weather></app-current-weather>
-  </h2>
+  </mat-card>
 </div>

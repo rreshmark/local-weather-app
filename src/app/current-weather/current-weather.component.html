@@ -1,4 +1,6 @@
-<div>
+<div *ngIf="current">
+  <!-- //checks if current variable is null or not,if it's not null then ony it will 
+  show up the rest of the html content// -->
   <div>
     <span>
       {{current.city}} {{current.country}}
